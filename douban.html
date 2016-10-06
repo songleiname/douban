@@ -4,14 +4,17 @@
 		<meta charset="utf-8" />
 		<title>豆瓣FM</title>
 		<link rel="stylesheet" type="text/css" href="css/douban.css"/>
-		<link rel="stylesheet" type="text/css" href="css/doubanzuoce.css"/>
+		<link rel="stylesheet" type="text/css" href="css/doubanzuoce.css"/>	
 		<script defer  src="js/douban.js" type="text/javascript" charset="utf-8"></script>
+		<script defer src="js/bianse.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<div id="dianjibeijing">
 			<button id="dianji">></button>
 		</div>
 		<div id="jiemianone">
+			<div id="denglubeijing">				
+			</div>
 			<div id="all">
 			<!--顶部-->
 			<div>				
@@ -20,12 +23,12 @@
 						<img src="img/log.jpg"/>
 					</div>
 					<nav>
-						<a href="">登录</a>				
+						<a id="denglujinru">登录</a>				
 						<div id="xvxian"></div>
-						<a href="">马上注册</a>
+						<a id="mashangzhuce">马上注册</a>
 						<div id="xvxian2"></div>
-						<a href="">开启PRO</a>
-						<a href=""></a>
+						<a href="https://douban.fm/upgrade">开启PRO</a>
+						<a></a>
 					</nav>
 				</div>
 			</div>
@@ -42,17 +45,24 @@
 					
 				</div>
 				<img src="img/03.jpg" id="paused"/>
-				<audio id="bgMusic">
+				<audio id="bgMusic" controls="controls">
 					<source = src="薛之谦 - 演员.mp3" type="audio/mp3">
 					<source = src="薛之谦 - 演员.mp3" type="audio/ogg">
 				</audio>
-				<img src="img/04.jpg" id="imgxin"/>
-				<img src="img/05.jpg" id="imglaj"/>
-				<img src="img/06.jpg" id="imgnext"/>
+				<img src="img/04.jpg" class="xinclass" id="imgxin" title="喜欢这首歌"/>
+				<img src="img/05.jpg" id="imglaj" title="不再播放"/>
+				<img src="img/06.jpg" id="imgnext" title="下一首"/>
+				<img src="img/2016-10-05_185819.jpg" id="imgxinb" c title="喜欢这首歌"/>
+				<img src="img/2016-10-05_185807.jpg" id="imglajb" title="不再播放"/>
+				<img src="img/2016-10-05_185709.jpg" id="imgnextb" title="下一首"/>
 				<div id="firstthird">
 					<span id="jixv">继续收听 ></span>
 				</div>
-				
+				<div id="waitiao"> 		 		
+					<div id="neitiao">
+					</div>				
+				</div>
+				<p id="shijian">00:00</p>
 			</div>
 			<!--播放器-->
 			<div id="fasong">
@@ -65,8 +75,9 @@
 				<img src="img/2016-10-02_164357.jpg"/>
 				<a href="">听相似歌曲</a>
 			</div>
-			<div id="fenxiang">
-				<a href="">分享这首歌</a>
+			<div id="fenxiang" class="fenxianga">
+				<a id="fenxiangzheshou">分享这首歌</a>
+				<img src="img/2016-10-05_194103.jpg" id="fenxiangtwo"/>
 			</div>
 			<div>
 				<button id="xiazai">
@@ -101,9 +112,10 @@
 			<div id="second">
 				<div id="one">
 					<ul>
-						<li><button>我的私人兆赫</button></li>
-						<li><button>我的红心兆赫</button></li>
-						<li><button>豆瓣精选兆赫</button></li>
+						<li><button id="wodeone">我的私人兆赫</button></li>
+						<li><button id="wodetwo" title="将歌曲加心
+即可在红心兆赫中听到">我的红心兆赫</button></li>
+						<li><button id="doubanjing">豆瓣精选兆赫</button></li>
 					</ul>
 				</div>
 				<div id="two">
@@ -114,18 +126,18 @@
 				</div>
 				<div id="third">
 					<ul>
-						<li><button>布鲁斯 MHz</button></li>
-						<li><button>拉丁 MHz</button></li>
-						<li><button>民谣 MHz</button></li>
-						<li><button>摇滚 MHz</button></li>
-						<li><button>流行 MHz</button></li>
+						<li><button id="bulu">布鲁斯 MHz</button></li>
+						<li><button id="lading">拉丁 MHz</button></li>
+						<li><button id="minyao">民谣 MHz</button></li>
+						<li><button id="yaogun">摇滚 MHz</button></li>
+						<li><button id="liuxing">流行 MHz</button></li>
 					</ul>
 				</div>
 				<div id="four">
 					品牌兆赫<hr id="xianthird">
 				</div>
 				<div id="five">
-					<button>SK-II 最初的梦 MHz</button>
+					<button id="zuichu">SK-II 最初的梦 MHz</button>
 				</div>				
 			</div>
 		</div>
@@ -138,10 +150,117 @@
 						<p>全部兆赫</p>
 					<div id="inputsousuo">
 						<input type="text" placeholder="  搜索兆赫" style="width: 230px;height: 26px; border: 1px solid #E1E8E6;">
+						<img src="img/2016-10-05_150734.jpg" id="sousuotu"/>
 					</div>
-					<div id="beijing"></div>
-					<div id="gundongimg">
-						<img src="img/31095.jpg"/>
+					<div id="gundongniu">
+						<ul>
+							<li><div id="gdone" class="gone">1</div></li>
+							<li><div id="gdtwo" class="gone">2</div></li>
+							<li><div id="gdthrid" class="gone">3</div></li>
+							<li><div id="gdfour" class="gone">4</div></li>
+							<li><div id="gdfive" class="gone">5</div></li>
+							<li><div id="gdsix" class="gone">6</div></li>
+						</ul>
+					</div>
+					<div id="beijing">
+						<div>
+							<img src="img/gd1.jpg" id="gundongimg"/>
+						</div>
+						<div>
+							<a href="" id="huayu"><h4>华语MHz</h4></a>
+							<p id="everyday">每天发现一首好听的歌</p>
+							<pre id="gundongyou">								
+							
+								热门歌曲：难念的经 / 外面的世界 / 无赖 (原唱:主唱:郑
+								
+								中基
+								
+								1189首歌曲 <a href=""> 兆赫详情</a>
+							</pre>
+						</div>
+					</div>
+					<div id="beijingtwo">
+						<div id="gundongimg">
+							<img src="img/gd2.jpg"/>
+						</div>
+						<div>
+							<a href="" id="huayu"><h4>八零MHz</h4></a>
+							<p id="everyday">生于八零年代的我们，听着这些歌成长</p>
+							<pre id="gundongyou">								
+							
+								热门歌曲：Never Grow Old / 突然的自我 / 火柴天堂 
+								
+								(Demo)
+								
+								883首歌曲 <a href=""> 兆赫详情</a>
+							</pre>
+						</div>
+					</div>
+					<div id="beijingthrid">
+						<div id="gundongimg">
+							<img src="img/gd3.jpg"/>
+						</div>
+						<div>
+							<a href="" id="huayu"><h4>粤语MHz</h4></a>
+							<p id="everyday">那些年我们心水的劲歌金曲</p>
+							<pre id="gundongyou">								
+							
+								热门歌曲：无赖 (原唱:主唱:郑中基 / 漫步人生路 / 少女
+								
+								的祈祷
+								
+								2704首歌曲 <a href=""> 兆赫详情</a>
+							</pre>
+						</div>
+					</div>
+					<div id="beijingfour">
+						<div id="gundongimg">
+							<img src="img/gd4.jpg"/>
+						</div>
+						<div>
+							<a href="" id="huayu"><h4>韩语MHz</h4></a>
+							<p id="everyday">韩语流行音乐就在这里</p>
+							<pre id="gundongyou">								
+							
+								热门歌曲：원더우먼 Wonder Woman / 牛奶歌 / 
+								
+								ノムコウ
+								
+								1151首歌曲 <a href=""> 兆赫详情</a>
+							</pre>
+						</div>
+					</div>
+					<div id="beijingfive">
+						<div id="gundongimg">
+							<img src="img/gd5.jpg"/>
+						</div>
+						<div>
+							<a href="" id="huayu"><h4>日语MHz</h4></a>
+							<p id="everyday">日语流行音乐，来这里听就对了</p>
+							<pre id="gundongyou">								
+							
+								热门歌曲：卒業の歌、友達の歌。 / そばにいるね / 夜空
+								
+								ノムコウ
+								
+								5999首歌曲 <a href=""> 兆赫详情</a>
+							</pre>
+						</div>
+					</div>
+					<div id="beijingsix">
+						<div id="gundongimg">
+							<img src="img/gd6.jpg"/>
+						</div>
+						<div>
+							<a href="" id="huayu"><h4>SK-II 最初的梦MHz</h4></a>
+							<pre id="gundongyou">														
+								热门歌曲：夜空中最亮的星 / 最初的梦想（Cover 范玮
+								
+								琪） / 一万次悲伤
+								
+								50首歌曲 <a href=""> 兆赫详情</a>
+							</pre>
+						</div>
 					</div>
 					<div id="yinyueleibie">
 						<nav>					
@@ -318,8 +437,94 @@
 				</div>
 				<button id="dianjituihui"><</button>
 			</div>
-			<!--左侧弹出-->
+			<!--左侧弹出-->			
 		</div>
+		<!--弹窗-->		
+		<div id="denglu">
+			<p>登录</p>
+			<div id="shuru">
+				<p>邮箱 / 用户名</p>
+				<input type="text" id="inputa" autofocus/>
+			</div>
+			<div id="shuruone">
+				<p>密码</p>
+				<input type="text" id="inputb" autofocus/>
+			</div>
+			<div id="shurutwo">
+				<p>验证码</p>
+				<input type="text" id="inputc" autofocus/>
+				<img src="img/2016-10-06_144433.jpg"/>
+			</div>
+			<div id="jizhumima">
+				<input type="checkbox" id=""/><p>下次自动登录</p>
+				<a href="">忘记密码?</a>
+			</div>
+			<div id="dengluniu">
+				<p>登录</p>
+			</div>
+			<div id="dengluyouce">
+				<p id="">用其他帐号登录:</p>
+				<div id="">
+					<a href="">新浪微博 </a> <a href=""><b>QQ</b></a>  <a href=""><b>MSN</b></a>
+				</div>
+				<div id="nonezhang">
+					<p>没有豆瓣FM账户?</p>
+				</div>
+				<div>
+					<div>
+						<a href="">立即注册</a>
+					</div>
+				</div>
+				<img src="img/2016-10-06_160727.jpg" id="guanbione"/>
+			</div>			
+		</div>
+		<!--弹窗-->
+		<!--弹窗二-->
+		<div id="denglubeijing">				
+		</div>
+		<div id="dengluer">
+			<p>新用户注册</p>
+			<div id="shuruer">
+				<p>用户名</p>
+				<input type="text" id="inputaa" placeholder="由英文和数字组成" autofocus/>
+			</div>
+			<div id="shuruonea">
+				<p>密码</p>
+				<input type="text" id="inputbb" placeholder="包含英文和数字，最少8位" autofocus/>
+			</div>
+			<div id="shuruthreea">
+				<p>重复密码</p>
+				<input type="text" id="inputdd" autofocus/>
+			</div>
+			<div id="shurutwoa">
+				<p>验证码</p>
+				<input type="text" id="inputcc" autofocus/>
+				<img src="img/2016-10-06_144433.jpg"/>
+			</div>
+			<div id="jizhumimaa">
+				<input type="checkbox" id=""/><p>阅读并同意《使用协议》</p>
+				<a href="">忘记密码?</a>
+			</div>
+			<div id="dengluniua">
+				<p>完成注册</p>
+			</div>
+			<div id="dengluyoucea">
+				<p id="">用其他帐号登录:</p>
+				<div id="">
+					<a href="">新浪微博 </a> <a href=""><b>QQ</b></a>  <a href=""><b>MSN</b></a>
+				</div>
+				<div id="nonezhanga">
+					<p>已经有豆瓣FM账户?</p>
+				</div>
+				<div>
+					<div>
+						<a href="">现在登录</a>
+					</div>
+				</div>
+				<img src="img/2016-10-06_160727.jpg" id="guanbizhuce"/>
+			</div>			
+		</div>
+		<!--弹窗二-->
 	</body>
 </html>
 <SCRIPT Language=VBScript><!--

@@ -72,6 +72,30 @@ body{
     display: block;
     z-index: 3;
 }
+#waitiao{
+	position: absolute;
+	top: 204px;
+	left: 889px;
+	background-color: #E5E5E8;
+	height: 2px;
+	cursor: pointer;
+	width:225px;	
+	z-index: 3;
+}#shijian{
+	position: absolute;
+	top: 200px;
+	left: 1055px;
+	font-size: 10px;	
+	z-index: 3;
+}
+#neitiao{
+	background-color:#9DD6C5;
+	width: 0%;
+	height: 2px;
+	border-right: 2px solid #399CCF;
+	border-radius:10%;
+	z-index: 3;
+}
 #paused{
 	position: absolute;
     top: 90px;
@@ -99,6 +123,31 @@ body{
     left: 1073px;
     cursor: pointer;
     z-index: 3;
+}
+#imgxinb{
+	position: absolute;
+    top: 272px;
+    left: 961px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+   opacity: 0.5;
+}
+#imglajb{
+	position: absolute;
+    top: 271px;
+    left: 1100px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
+}
+#imgnextb{
+	position: absolute;
+    top: 273px;
+    left: 1080px;
+    cursor: pointer;
+    z-index: 3;
+    display: none;
 }
 #firstthird{
 	position: absolute;
@@ -145,6 +194,8 @@ body{
     font-size: 12px;
     color: #999999;
     border: 1px solid #9DD6C5;
+    background-color: #E2E8E6;
+    z-index: 6;
 }
 #tingxiangsi img{
 	position: absolute;
@@ -164,6 +215,16 @@ body{
     left: 1074px;
     font-size: 10px;
     color: #999999;
+    z-index: 5;
+    cursor: pointer;
+}
+#fenxiang img{
+	position: absolute;
+    top: 392px;
+    left: 886px;
+    display: none;
+    z-index: 5;
+    cursor: pointer;
 }
 #xiazai{
 	position: absolute;
@@ -247,6 +308,11 @@ body{
 	height: 804px;
 	overflow: auto;
 	box-shadow: #EBEBEB 20px -10px 10px -10px inset;
+}
+#bgMusic{
+	position: absolute;
+	top: 500px;
+	z-index: 10;
 }
 #audio{
 	position: fixed;
@@ -388,4 +454,481 @@ ul{
     cursor: pointer;
     border-style: none;
     background-color: #E3E9E6;
+}
+#denglubeijing{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #E9EDEB;
+	z-index: 10;
+	opacity: 0.8;
+	display: none;
+}
+#denglu{
+	position: fixed;
+    top: 175px;
+    left: 405px;
+    width: 554px;
+    height: 350px;
+	background-color: #FFFFFF;
+	z-index: 10;
+	box-shadow: #C7C7C7 0px 0px 20px;
+	display: none;
+}
+#denglu p{
+	position: absolute;
+	top: 26px;
+	left: 40px;
+	font-size: 18px;
+	color: #333333;
+	font-weight: 500;
+}
+#shuru{
+	position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 283px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shuru p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#inputa{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 119px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#shuruone{
+	position: absolute;
+    top: 127px;
+    left: 40px;
+    width: 283px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shuruone p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#inputb{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 119px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#shurutwo{
+	position: absolute;
+    top: 176px;
+    left: 40px;
+    width: 150px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shurutwo p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#shurutwo img{	
+    position: absolute;
+    top: 0px;
+    left: 152px;
+    font-size: 10px;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+#inputc{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 57px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#dengluyouce{
+	position: fixed;
+    top: 175px;
+    left: 767px;
+    width: 192px;
+    height: 350px;
+	background-color: #5A5A5A;
+	z-index: 10;
+}
+#dengluyouce div{
+	position: absolute;
+	top: 58px;
+	left: 26px;	
+}
+#dengluyouce p{
+	position: absolute;
+	top: 25px;
+	left: 26px;
+	color: #AAAAAA;
+	font-size: 10px;	
+}
+#nonezhang p{
+	position: absolute;
+	top: 202px;
+    left: 0px;
+    width: 90px;
+}
+#dengluyouce div a{
+	color: #8FBEB0;
+	font-size: 10px;
+}
+#jizhumima input{
+	position: absolute;
+    top: 230px;
+    left: 36px;
+}
+#jizhumima p{
+	position: absolute;
+    top: 220px;
+    left: 55px;
+    color: #888888;
+    font-size: 10px;
+}
+#jizhumima a{	    
+    position: absolute;
+    top: 233px;
+    left: 268px;
+    color: #55BB99;
+    cursor: pointer;
+    font-size: 10px;
+}
+#dengluniu{
+	position: absolute;
+    top: 267px;
+    left: 215px;
+    height: 35px;
+    width: 108px;   
+    background-color: #9DD6C5;
+    cursor: pointer;   
+}
+#dengluniu p{
+	position: absolute;
+    top: -6px;
+    left: 40px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+#dengluniu:hover{
+	background-color: #BAE2D6;
+}
+#dengluniu:hover p{
+	color: #5A5A5A;
+	background-color: #BAE2D6;
+}
+#dengluyouce div div{
+	position: absolute;
+    top: 236px;
+    left: 1px;
+    width: 138px;
+    height: 30px;
+	border: 1px solid #666666;
+}
+#dengluyouce div div a{
+	position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+#dengluyouce:hover div div{
+	background-color: #666666;
+}
+#dengluyouce img{
+	position: absolute;
+	top: 0px;
+	left: 159px;
+	cursor: pointer;
+}
+
+
+#dengluer{
+	position: fixed;
+    top: 124px;
+    left: 405px;
+    width: 554px;
+    height: 400px;
+	background-color: #FFFFFF;
+	z-index: 10;
+	box-shadow: #C7C7C7 0px 0px 20px;
+	display: none;
+}
+#dengluer p{
+	position: absolute;
+	top: 26px;
+	left: 40px;
+	font-size: 18px;
+	color: #333333;
+	font-weight: 500;
+}
+#shuruer{
+	position: absolute;
+    top: 80px;
+    left: 40px;
+    width: 283px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shuruer p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#inputaa{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 119px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#shuruonea{
+	position: absolute;
+    top: 127px;
+    left: 40px;
+    width: 283px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shuruonea p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#inputbb{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 119px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#shuruthreea{
+	position: absolute;
+    top: 175px;
+    left: 40px;
+    width: 283px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shuruthreea p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#inputdd{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 119px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#shurutwoa{
+	position: absolute;
+    top: 223px;
+    left: 40px;
+    width: 150px;
+    height: 35px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+}
+#shurutwoa p{	
+    position: absolute;
+    top: -2px;
+    left: 9px;
+    font-size: 10px;
+    letter-spacing: -1px;
+}
+#shurutwoa img{	
+    position: absolute;
+    top: 0px;
+    left: 152px;
+    font-size: 10px;
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+#inputcc{
+	position: absolute;
+    top: 0px;
+    left: 92px;
+    width: 57px;
+    height: 31px;
+    font-size: 11px;
+	color: #333333;
+	font-weight: 500;
+	background-color: #EEF1F0;
+	border: 0px solid #EEF1F0;
+	outline:medium;
+}
+#dengluyoucea{
+	position: fixed;
+    top: 124px;
+    left: 767px;
+    width: 192px;
+    height: 400px;
+	background-color: #5A5A5A;
+	z-index: 10;
+}
+#dengluyoucea div{
+	position: absolute;
+	top: 58px;
+	left: 26px;	
+}
+#dengluyoucea p{
+	position: absolute;
+	top: 25px;
+	left: 26px;
+	color: #AAAAAA;
+	font-size: 10px;	
+}
+#nonezhanga p{
+	position: absolute;
+    top: 251px;
+    left: 0px;
+    width: 102px;
+}
+#dengluyoucea div a{
+	color: #8FBEB0;
+	font-size: 10px;
+}
+#jizhumimaa input{
+	position: absolute;
+    top: 305px;
+    left: 36px;
+}
+#jizhumimaa p{
+	position: absolute;
+    top: 295px;
+    left: 55px;
+    color: #888888;
+    font-size: 10px;
+}
+#jizhumimaa a{	    
+    position: absolute;
+    top: 233px;
+    left: 268px;
+    color: #55BB99;
+    cursor: pointer;
+    font-size: 10px;
+}
+#dengluniua{
+	position: absolute;
+    top: 295px;
+    left: 215px;
+    height: 35px;
+    width: 108px;   
+    background-color: #9DD6C5;
+    cursor: pointer;   
+}
+#dengluniua p{
+	position: absolute;
+    top: -6px;
+    left: 24px;
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+#dengluniua:hover{
+	background-color: #BAE2D6;
+}
+#dengluniua:hover p{
+	color: #5A5A5A;
+	background-color: #BAE2D6;
+}
+#dengluyoucea div div{
+	position: absolute;
+    top: 285px;
+    left: 1px;
+    width: 138px;
+    height: 30px;
+	border: 1px solid #666666;
+}
+#dengluyoucea div div a{
+	position: absolute;
+    top: 6px;
+    left: 8px;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+#dengluyoucea:hover div div{
+	background-color: #666666;
+}
+#dengluyoucea img{
+	position: absolute;
+	top: 0px;
+	left: 159px;
+	cursor: pointer;
 }
