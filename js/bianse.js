@@ -97,27 +97,4 @@
     document.getElementById('tingxiangsi').onmouseout = function(){
     	this.style.background = ''
     }
-    
-    /*document.getElementById('imgxin').onmouseover = function(){
-    	document.getElementById('imgxin').style.display = "none"
-    	document.getElementById('imgxinb').style.display = "block"
-    }
-    document.getElementById('imgxin').onmouseout = function(){
-    	document.getElementById('imgxinb').style.display = "none"
-    	document.getElementById('imgxin').style.display = "block"
-    }
-    document.getElementById('imglaj').onmouseover = function(){
-    	document.getElementById('imglaj').style.display = "none"
-    	document.getElementById('imglajb').style.display = "block"
-    }
-    document.getElementById('imglaj').onmouseout = function(){
-    	document.getElementById('imglajb').style.display = "none"
-    	document.getElementById('imglaj').style.display = "block"
-    }
-    document.getElementById('imgnext').onmouseover = function(){
-    	this.src = "img/2016-10-05_185709.jpg"
-    }
-    document.getElementById('imgnext').onmouseout = function(){
-    	this.src = "img/06.jpg"
-    }*/
 }(window))

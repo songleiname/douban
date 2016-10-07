@@ -81,11 +81,12 @@ body{
 	cursor: pointer;
 	width:225px;	
 	z-index: 3;
-}#shijian{
+}
+#shijian{
 	position: absolute;
 	top: 200px;
-	left: 1055px;
-	font-size: 10px;	
+	left: 1070px;
+	font-size: 1px;	
 	z-index: 3;
 }
 #neitiao{
@@ -96,12 +97,51 @@ body{
 	border-radius:10%;
 	z-index: 3;
 }
+#yanyuan{
+	position: absolute;
+    top: 63px;
+    left: 890px;
+    width: 63px;
+    height: 37px;
+    z-index: 3;
+}
+#tiao{
+	position: absolute;
+    top: 218px;
+    left: 1069px;
+    background-color: #E5E5E8;
+    height: 4px;
+    cursor: pointer;
+    width: 45px;
+    z-index: 4;
+    display: none;
+}
+#yinliangtiao{
+	background-color:#9DD6C5;
+	width: 0%;
+	height: 4px;
+	border-right: 2px solid #333333;
+	border-radius:10%;
+	z-index: 4;
+	display: none;
+}
+#shengyin{
+	position: absolute;
+    top: 212px;
+    left: 1105px;
+    cursor: pointer;
+    z-index: 4;
+    display: block;
+}
+#shengyin:hover{
+	display: none;
+}
 #paused{
 	position: absolute;
     top: 90px;
     left: 1095px;
     cursor: pointer;
-    z-index: 3;
+    z-index: 5;
 }
 #imgxin{
 	position: absolute;
@@ -160,7 +200,7 @@ body{
     display: none;
     opacity:0.85;
     cursor: pointer;
-    z-index: 3;
+    z-index: 5;
 }
 #jixv{
 	position: absolute;
@@ -171,7 +211,7 @@ body{
     display: none;
     z-index: auto;
     cursor: pointer;
-    z-index: 3;
+    z-index: 5;
 }
 #fasong  img{
 	position: absolute;
@@ -358,17 +398,17 @@ body{
 ul{
 	list-style: none;	
 }
-#one ul li button{
+#one ul li a{
 	font-size: 10px;
     letter-spacing: 2px;
-    width: 225px;
-    height: 38px;
+    width: 195px;
+    height: 15px;
     text-align: left;
-    padding: 15px;
-    margin: 9px;
+    padding: 12px;
     cursor: pointer;
-    border-style: none;
     background-color: #E3E9E6;
+    display: block;
+    margin: 15px;
 }
 #two{
 	position: absolute;
@@ -401,22 +441,22 @@ ul{
 }
 #third{
 	position: absolute;
-    top: 284px;
+    top: 294px;
     left: 230px;
     width: 300px;
     height: 175px;  	
 }
-#third ul li button{
+#third ul li a{
 	font-size: 10px;
     letter-spacing: 2px;
-    width: 225px;
-    height: 38px;
+    width: 195px;
+    height: 15px;
     text-align: left;
-    padding: 15px;
-    margin: 9px;
+    padding: 12px;
     cursor: pointer;
-    border-style: none;
     background-color: #E3E9E6;
+    display: block;
+    margin: 15px;
 }
 #four{
 	position: absolute;

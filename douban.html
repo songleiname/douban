@@ -45,7 +45,7 @@
 					
 				</div>
 				<img src="img/03.jpg" id="paused"/>
-				<audio id="bgMusic" controls="controls">
+				<audio id="bgMusic">
 					<source = src="薛之谦 - 演员.mp3" type="audio/mp3">
 					<source = src="薛之谦 - 演员.mp3" type="audio/ogg">
 				</audio>
@@ -62,7 +62,14 @@
 					<div id="neitiao">
 					</div>				
 				</div>
-				<p id="shijian">00:00</p>
+				<div id="tiao">
+					<div id="yinliangtiao"></div>
+				</div>
+				<pre id="yanyuan"><h2>薛之谦</h2>
+					<h6>演员</h6>
+				</pre>
+				<img id="shengyin" src="img/2016-10-06_215710.jpg"/>
+				<p id="shijian"></p>
 			</div>
 			<!--播放器-->
 			<div id="fasong">
@@ -112,10 +119,9 @@
 			<div id="second">
 				<div id="one">
 					<ul>
-						<li><button id="wodeone">我的私人兆赫</button></li>
-						<li><button id="wodetwo" title="将歌曲加心
-即可在红心兆赫中听到">我的红心兆赫</button></li>
-						<li><button id="doubanjing">豆瓣精选兆赫</button></li>
+						<li><a id="wodeone" href="#">我的私人兆赫</a></li>
+						<li><a id="wodetwo" href="#" title="将歌曲加心 即可在红心兆赫中听到">我的红心兆赫</a></li>
+						<li><a id="doubanjing" href="#">豆瓣精选兆赫</a></li>
 					</ul>
 				</div>
 				<div id="two">
@@ -126,11 +132,11 @@
 				</div>
 				<div id="third">
 					<ul>
-						<li><button id="bulu">布鲁斯 MHz</button></li>
-						<li><button id="lading">拉丁 MHz</button></li>
-						<li><button id="minyao">民谣 MHz</button></li>
-						<li><button id="yaogun">摇滚 MHz</button></li>
-						<li><button id="liuxing">流行 MHz</button></li>
+						<li><a href="#" id="bulu">布鲁斯 MHz</a></li>
+						<li><a href="#" id="lading" title="兆赫详情 分享">拉丁 MHz</a></li>
+						<li><a href="#" id="minyao" title="兆赫详情 分享">民谣 MHz</a></li>
+						<li><a href="#" id="yaogun" title="兆赫详情 分享">摇滚 MHz</a></li>
+						<li><a href="#" id="liuxing" title="兆赫详情 分享">流行 MHz</a></li>
 					</ul>
 				</div>
 				<div id="four">
@@ -288,45 +294,45 @@
 					</div>
 					<div id="remenone">
 						<ul>
-							<li><a href=""><img src="img/1.jpg"/></a></li>
+							<li><a href=""  title="简介：每天发现一首好听的歌曲"><img src="img/1.jpg" class="huanbofang"/></a></li>
 							<br />
-							<li><a href=""><img src="img/3.jpg"/></a></li>
+							<li><a href=""  title="简介：生于八零年代的我们，听着这些歌长大"><img src="img/3.jpg" class="huanbofang"/></a></li>
 							<br />
-							<li><a href=""><img src="img/5.jpg"/></a></li>
+							<li><a href=""  title="简介：那些年我们心水的劲歌舞曲"><img src="img/5.jpg" class="huanbofang"/></a></li>
 							<br />
-							<li><a href=""><img src="img/7.jpg"/></a></li>
+							<li><a href=""  title="简介：我不在喝咖啡，就在听咖啡兆赫"><img src="img/7.jpg" class="huanbofang"/></a></li>
 							<br />
-							<li><a href=""><img src="img/9.jpg"/></a></li>					
+							<li><a href=""  title="简介：浅吟清唱"><img src="img/9.jpg" class="huanbofang"/></a></li>					
 						</ul>
-					</div>
+					</div>					
 					<div id="rementwo">
 						<ul>
-							<li><a href=""><img src="img/2.jpg"img/3.jpg"/></a></li>
+							<li><a href=""  title="简介：关于欧美流行音乐的一切就在这里"><img src="img/2.jpg"img/3.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/4.jpg"/></a></li>
+							<li><a href=""  title="简介：工作学习的时候听什么"><img src="img/4.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/6.jpg"/></a></li>
+							<li><a href=""  title="简介：在属于你的放松地带，释放心灵"><img src="img/6.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/8.jpg"/></a></li>
+							<li><a href=""  title="简介：细听别人的歌声，诉说着自己的故事"><img src="img/8.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/10.jpg"/></a></li>
+							<li><a href=""  title="简介：When I Dream"><img src="img/10.jpg"/></a></li>
 						</ul>
 					</div>
 					<div>
 						<div id="rone">
-							<pre><a href="">华语</a><a href="">MHz</a>                              <a href="">欧美MHz</a></pre>
+							<pre><a href="" title="简介：每天发现一首好听的歌曲">华语</a>                                 <a href=""  title="简介：关于欧美流行音乐的一切就在这里">欧美MHz</a></pre>
 						</div>
 						<div id="rtwo">
-							<pre><a href="">八零MHz</a>                              <a href="">工作学习MHz</a></pre>
+							<pre><a href=""  title="简介：生于八零年代的我们，听着这些歌长大">八零MHz</a>                              <a href=""  title="简介：工作学习的时候听什么">工作学习MHz</a></pre>
 						</div>
 						<div id="rthird">
-							<pre><a href="">粤语MHz</a>                              <a href="">轻音乐MHz</a></pre>
+							<pre><a href=""  title="简介：那些年我们心水的劲歌舞曲">粤语MHz</a>                              <a href=""  title="简介：在属于你的放松地带，释放心灵">轻音乐MHz</a></pre>
 						</div>
 						<div id="rfour">
-							<pre><a href="">咖啡MHz</a>                              <a href="">你的歌词我的故事MHz</a></pre>
+							<pre><a href=""  title="简介：我不在喝咖啡，就在听咖啡兆赫">咖啡MHz</a>                              <a href=""  title="简介：细听别人的歌声，诉说着自己的故事">你的歌词我的故事MHz</a></pre>
 						</div>
 						<div id="rfive">
-							<pre><a href="">看书浇花晒太阳MHz</a>                    <a href="">爵士MHz</a></pre>
+							<pre><a href=""  title="简介：浅吟清唱">看书浇花晒太阳MHz</a>                    <a href=""  title="简介：When I Dream">爵士MHz</a></pre>
 						</div>
 					</div>
 					<div id="zhaohexiangqing">
@@ -355,45 +361,45 @@
 				<div id="secondbufen">								
 					<div id="remenone">
 						<ul>
-							<li><a href=""><img src="img/11.jpg"/></a></li>
+							<li><a href=""  title="简介：工作学习的时候听什么"><img src="img/11.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/13.jpg"/></a></li>
+							<li><a href=""  title="简介：让你的耳朵吸收新鲜正能量"><img src="img/13.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/15.jpg"/></a></li>
+							<li><a href=""  title="简介：古典乐也能听的轻松随性"><img src="img/15.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/17.jpg"/></a></li>
+							<li><a href=""  title="简介：james"><img src="img/17.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/19.jpg"/></a></li>					
+							<li><a href=""  title="简介：彼时感动你的电影，此刻温暖你的声音"><img src="img/19.jpg"/></a></li>					
 						</ul>
 					</div>
 					<div id="rementwo">
 						<ul>
-							<li><a href=""><img src="img/12.jpg"img/3.jpg"/></a></li>
+							<li><a href=""  title="简介：这里没有喧哗与吵闹，静下心来感受世界的美好"><img src="img/12.jpg"img/3.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/14.jpg"/></a></li>
+							<li><a href=""  title="简介：我不在喝咖啡，就在听咖啡兆赫"><img src="img/14.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/16.jpg"/></a></li>
+							<li><a href=""  title="简介：When I Dream"><img src="img/16.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/18.jpg"/></a></li>
+							<li><a href=""  title="简介：在属于你的放松地带，释放心灵"><img src="img/18.jpg"/></a></li>
 							<br />
-							<li><a href=""><img src="img/20.jpg"/></a></li>
+							<li><a href=""  title="简介：更新鲜的歌曲，更新鲜的声音"><img src="img/20.jpg"/></a></li>
 						</ul>
 					</div>
 					<div>
 						<div id="rone">
-							<pre><a href="">工作学习MHz</a>                          <a href="">小清新MHz</a></pre>
+							<pre><a href=""  title="简介：工作学习的时候听什么">工作学习MHz</a>                          <a href=""  title="简介：这里没有喧哗与吵闹，静下心来感受世界的美好">小清新MHz</a></pre>
 						</div>
 						<div id="rtwo">
-							<pre><a href="">新歌MHz</a>                              <a href="">咖啡MHz</a></pre>
+							<pre><a href=""  title="简介：让你的耳朵吸收新鲜正能量">新歌MHz</a>                              <a href=""  title="简介：我不在喝咖啡，就在听咖啡兆赫">咖啡MHz</a></pre>
 						</div>
 						<div id="rthird">
-							<pre><a href="">古典MHz</a>                              <a href="">爵士MHz</a></pre>
+							<pre><a href=""  title="简介：古典乐也能听的轻松随性">古典MHz</a>                              <a href=""  title="简介：When I Dream">爵士MHz</a></pre>
 						</div>
 						<div id="rfour">
-							<pre><a href="">民谣MHz</a>                              <a href="">轻音乐MHz</a></pre>
+							<pre><a href=""  title="简介：james">民谣MHz</a>                              <a href=""  title="简介：在属于你的放松地带，释放心灵">轻音乐MHz</a></pre>
 						</div>
 						<div id="rfive">
-							<pre><a href="">电影原声MHz</a>                          <a href="">九零MHz</a></pre>
+							<pre><a href=""  title="简介：彼时感动你的电影，此刻温暖你的声音">电影原声MHz</a>                          <a href=""  title="简介：更新鲜的歌曲，更新鲜的声音">九零MHz</a></pre>
 						</div>
 					</div>
 					<div id="zhaohexiangqing">

@@ -165,16 +165,13 @@
 	}
 	
 	audio.ontimeupdate = function(){
-		var sj = audio.currentTime;
+		var sj = audio.duration - audio.currentTime;
 		var miao = (parseInt(sj))%60
 		var fen = (parseInt(sj/60))%60
 		if(miao<10){
 			miao = '0' + miao;
-		}
-		if(fen<10){
-			fen = '0' + fen;
 		}		
-		document.getElementById("shijian").innerHTML= fen +":"+ miao + "/" + parseInt(audio.duration/60)+":"+parseInt(audio.duration%60);	
+		document.getElementById("shijian").innerHTML= "-" + fen +":"+ miao;	
 		var percent = audio.currentTime / audio.duration;
 		var waitiao = document.getElementById("waitiao");
     	var neitiao = document.getElementById("neitiao");
@@ -196,17 +193,43 @@
 			waitiao.onmousemove = null;
 		}
 	}
-	/*//播放(继续播放)
 	
-	 
-	//暂停
-	audio.pause();
-	 
+	audio.volumemin = 0.1;
+	audio.volumemax = 1;
+	var tiao = document.getElementById("tiao")
+	var yinliangtiao = document.getElementById("yinliangtiao")
+	tiao.onclick = function(event){
+		yinliangtiao.style.width = event.offsetX+ "px";
+		audio.volume = parseInt(event.offsetX)/100;
+	}
+	
+	var tiao = document.getElementById("tiao");
+	var shengyin = document.getElementById("shengyin");
+	shengyin.onmousemove = function(){		
+		if (shengyin.style.display == "none") {
+			tiao.style.display = "block";
+		}
+		tiao.onmousemove = function(){
+			shengyin.style.display = "block"
+			tiao.style.display = "none"
+		}
+	}
+	
+/*	var imgimgimg = document.getElementById("huanbofang")
+	var huanbo = document.getElementById("huanbo")
+	imgimgimg.onmousemove = function (){
+		if (imgimgimg.style.visibility == "hidden") {
+			huanbo.style.visibility = "visible"
+		} else{
+			imgimgimg.style.visibility = "visible"
+			huanbo.style.visibility = "hidden"
+		}
+	}*/
 	//停止
 	audio.pause();
 	audio.currentTime = 0;
 	 
 	//重新播放
-	audio.currentTime = 0;
+	/*audio.currentTime = 0;
 	audio.play();*/
 }(window))

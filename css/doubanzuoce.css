@@ -142,6 +142,9 @@ p{
 #yinyueleibie nav span a{
 	color: #888888;
 }
+#yinyueleibie nav span:hover a{
+	color: #8DD0B9;
+}
 #yinyueleibie nav{
 	color: #888888;
 }
@@ -282,4 +285,14 @@ p{
     border-style: none;
     background-color: #DFE8E5;
     z-index: 6;
+}
+#huanbofang:{
+	visibility: visible;
+}
+#remenone ul li a:hover img{
+	visibility: hidden;
+}
+#huanbo:{
+	visibility: hidden;
+	border-radius: 50%;
 }
